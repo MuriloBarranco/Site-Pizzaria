@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#" class="logo">
+        Pizzaria
+        <span>.</span>
+      </a>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+        <li><a href="#banner">Início</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </header>
+
+    <section class="catalogo" id="catalogo">
+      <div class="title">
+        <h2 class="titleText">
+          Nosso
+          <span>C</span>
+          atálogo de Pizzas
+        </h2>
+        <p>Escolha a pizza que mais combina com você!</p>
+      </div>
+
+      <div class="content">
+        <div class="box">
+          <div class="imgBx">
+            <img src="./assets/pizza-marguerita.jpg" alt="Pizza Marguerita" />
+          </div>
+          <div class="text">
+            <h3>Pizza Marguerita</h3>
+            <p>
+              Molho de tomate, queijo muçarela, manjericão e azeite de oliva.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img
+              src="./assets/pizza-quatro-queijos.jpg"
+              alt="Pizza Quatro Queijos"
+            />
+          </div>
+          <div class="text">
+            <h3>Pizza Quatro Queijos</h3>
+            <p>Muçarela, gorgonzola, parmesão e provolone.</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src="./assets/pizza-portuguesa.jpg" alt="Pizza Portuguesa" />
+          </div>
+          <div class="text">
+            <h3>Pizza Portuguesa</h3>
+            <p>Molho de tomate, presunto, ovos, azeitonas, cebola e queijo.</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src="./assets/pizza-vegetariana.jpg" alt="Pizza Vegetariana" />
+          </div>
+          <div class="text">
+            <h3>Pizza Vegetariana</h3>
+            <p>
+              Legumes frescos como abobrinha, berinjela, pimentões e cogumelos.
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img src="./assets/pizza-doces.jpg" alt="Pizza Doce" />
+          </div>
+          <div class="text">
+            <h3>Pizza Doce</h3>
+            <p>Chocolate, frutas frescas e uma calda deliciosa.</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgBx">
+            <img
+              src="./assets/pizza-especial-casa.jpg"
+              alt="Pizza Especial da Casa"
+            />
+          </div>
+          <div class="text">
+            <h3>Pizza Especial da Casa</h3>
+            <p>Uma combinação única de sabores exclusivos da nossa pizzaria!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="title">
+        <a href="#" class="btn">Ver mais</a>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      function toggleMenu() {
+        const menuToggle = document.querySelector(".menuToggle")
+        const navigation = document.querySelector(".navigation")
+        menuToggle.classList.toggle("active")
+        navigation.classList.toggle("active")
+      }
+    </script>
+  </body>
+</html>
